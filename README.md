@@ -1,6 +1,6 @@
-# Continuous Curve-Bonded Token
+# Harberger Taxes
 
-ERC20 Continuous Token backed by bonding curves and an automated market maker contract.
+A Harberger-taxed cryptoasset.
 
 ## Directory Structure
 
@@ -36,35 +36,29 @@ To get started, install the following on your machine:
 - [Smart Contract Best Practices](https://consensys.github.io/smart-contract-best-practices/): Helps you understand non-functional requirements within the smart contract ecosystem: design patterns, security, upgradability, and tooling.
 - [Ethernaut](https://ethernaut.zeppelin.solutions/): Advanced security topics. Optional, but important.
 
-## Setup
+## Setup Instructions
 
-### Run Ganache
-
-First, make sure that **Ganache is up and running locally** at port 7545:
+- Make sure that **Ganache is up and running locally** at port 7545.
 
 - Go to Settings > Accounts & Keys 
 - Disable `Autogenerate HD Mnemonic` and enter a Mnemonic you wish to use.
-
-### Project Setup
+- Then, do the following:
 
 ```bash
-git clone https://github.com/yosriady/dapp-boilerplate
-cd dapp-boilerplate
+git clone https://github.com/tenx-tech/TENX
+cd TENX
 npm install # Installs dependencies
 npm run setup:hooks # Sets up pre-commit hook to automatically run linters and unit tests
-npm run test
-npm run start
 ```
 
-Create an `.env` file in this project's root directory (see `env.sample` for an example):
+> The `.env` file is used to deploy to Testnets such as `Rinkeby`. If you're developing locally, you can skip this step.
+
+- Create an `.env` file in this project's root directory (see `env.sample` for an example):
 
 ```
 MNEMONIC='foobar'
 INFURA_ACCESS_TOKEN='test'
 ```
-
-The `.env` file is used to deploy to Testnets such as `Ropsten` and `Rinkeby`. 
-If you're developing locally, you can skip this step.
 
 ## Contributing
 
@@ -80,11 +74,11 @@ Make your changes, then create a [pull request](https://github.com/yosriady/dapp
 
 ## Thanks
 
-**continuous-token** ❤️ 2018+, Yos Riady. Released under the [MIT] License.<br>
+**harberger-taxes** ❤️ 2018+, Yos Riady. Released under the [MIT] License.<br>
 Authored and maintained by Yos Riady with help from contributors ([list][contributors]).
 
 > [yos.io](http://yos.io) &nbsp;&middot;&nbsp;
 > GitHub [@yosriady](https://github.com/yosriady)
 
 [MIT]: http://mit-license.org/
-[contributors]: http://github.com/yosriady/continuous-token/contributors
+[contributors]: http://github.com/yosriady/harberger-taxes/contributors
