@@ -6,6 +6,7 @@ contract HarbergerTax { // TODO: is Marketplace
         uint balance; // Amount in ether
         uint lastCollectedAt; // Timestamp of last collection date
     }
+
     mapping(bytes32 => TaxBalance) public taxBalances;
 
     // Address where collected taxes are sent to

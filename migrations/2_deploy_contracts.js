@@ -1,5 +1,5 @@
-const MyToken = artifacts.require('MyToken.sol');
+const RarePatron = artifacts.require('RarePatron.sol');
 
 module.exports = async (deployer) => {
-  await deployer.deploy(MyToken);
+  await deployer.deploy(RarePatron, 'MyRarePatron', 'MRP');
 };
